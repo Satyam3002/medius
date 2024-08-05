@@ -15,8 +15,8 @@ export default function Payments() {
         </p>
         <p className="text-gray">
           The more time you have to pay off the mortgage, the less each monthly
-          mortgage payment will be. (In lender-speak, ‘extending the length of
-          your mortgage’ is known as ‘increasing your loan term’.) This is why
+          mortgage payment will be. (In lender-speak, extending the length of
+          your mortgage is known as increasing your loan term.) This is why
           people often choose a 30-year fixed rate mortgage over one with a 15-
           or 20-year term.
         </p>
@@ -25,9 +25,9 @@ export default function Payments() {
 
         <p className="text-gray">
           The smaller the amount of your mortgage, the smaller your monthly
-          mortgage payments will be. If you’re able to put at least 20% of the
-          home price towards your down payment, you’ll be able to avoid PMI
-          (private mortgage insurance). Even if you can’t afford a complete 20%
+          mortgage payments will be. If you're able to put at least 20% of the
+          home price towards your down payment, youll be able to avoid PMI
+          (private mortgage insurance). Even if you can't afford a complete 20%
           down payment, boosting your down payment will help you get PMI removed
           sooner. In fact, boosting your down payment by 5% can lower your
           monthly PMI fees.
@@ -60,11 +60,11 @@ export default function Payments() {
             may increase after consummation). The introductory interest rate for
             ARMs is typically lower than the interest rate for a conventional
             fixed-rate mortgage which could make it a great way to save on
-            interest if you know you won’t keep the mortgage for long.
+            interest if you know you won't keep the mortgage for long.
           </p>
           <p>
             {" "}
-            If you’re not planning on buying a home for a while, improving your
+            If you're not planning on buying a home for a while, improving your
             credit score is a tried and true way of increasing your chances of
             qualifying for a lower interest rate. By reducing your
             debt-to-income ratio (DTI), lenders will see that you comfortably
@@ -92,20 +92,20 @@ export default function Payments() {
         <div className="flex text-gray flex-col gap-y-3">
           <p className="">
             There are 8 steps to buying a house and by using this calculator
-            you’ve completed step 2 (calculating your home affordability) and
+            you've completed step 2 (calculating your home affordability) and
             maybe even step 1 (getting your finances in order).
           </p>
           <p>
-          The next step is getting pre-approved. A mortgage pre-approval with Better Mortgage takes as little as 3-minutes and doesn’t 
-          impact your credit score. It’s a free, no-commitment way to see how much home you can buy, the mortgages you qualify for, 
-          and the range of interest rates you’ll be offered.
+          The next step is getting pre-approved. A mortgage pre-approval with Better Mortgage takes as little as 3-minutes and doesn't 
+          impact your credit score. It's a free, no-commitment way to see how much home you can buy, the mortgages you qualify for, 
+          and the range of interest rates you'll be offered.
           </p>
           <p>
-          If you’re ready to buy a home now, our definitive home buying checklist can walk you through everything you need
-           to know to get the home you want. With your Better Mortgage pre-approval letter in hand, you’ll be able to show 
-           sellers and real estate agents that you mean business—giving you an edge over homebuyers that don’t have this kind
-            of proof that they’re financially ready to purchase. And by working with
-           an agent from Better Real Estate and funding with Better Mortgage, you’ll save $2,000 on closing costs,
+          If you're ready to buy a home now, our definitive home buying checklist can walk you through everything you need
+           to know to get the home you want. With your Better Mortgage pre-approval letter in hand, you'll be able to show 
+           sellers and real estate agents that you mean business—giving you an edge over homebuyers that don't have this kind
+            of proof that they're financially ready to purchase. And by working with
+           an agent from Better Real Estate and funding with Better Mortgage, you'll save $2,000 on closing costs,
             and save up to $8,200 on average over the life of your loan.** 
           </p>
         </div>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -61,7 +62,7 @@ export default function Footer() {
           <p className="font-bold text-xl">Resources</p>
           {[
             { name: "Home Affordability Calculator", href: "/home-affordability-calculator" },
-            { name: "Mortgage Calculator", href: "/mortage-calculator" },
+            { name: "Mortgage Calculator", href: "/mortgage-calculator" },
             { name: "Free Mortgage Calculator", href: "/free-mortgage-calculator" },
             { name: "Mortgage Calculator with Taxes", href: "/mortgage-calculator-with-taxes" },
             { name: "Mortgage Calculator with PMI", href: "/mortgage-calculator-with-pmi" },
@@ -84,25 +85,21 @@ export default function Footer() {
           </Link>
           {[
             { name: "About Us", href: "/about" },
-            "Careers",
-            "Media",
-            "Partner With Us",
-            "Learning Center",
-            "FAQs",
-            "Investor Relations",
+            { name: "Careers", href: "/careers" },
+            { name: "Media", href: "/media" },
+            { name: "Partner With Us", href: "/partner-with-us" },
+            { name: "Learning Center", href: "/learning-center" },
+            { name: "FAQs", href: "/faqs" },
+            { name: "Investor Relations", href: "/investor-relations" },
           ].map((item) =>
-            typeof item === "string" ? (
+            item.href ? (
+              <Link key={item.name} href={item.href} className="hover:underline">
+                {item.name}
+              </Link>
+            ) : (
               <a key={item} href="#" className="hover:underline">
                 {item}
               </a>
-            ) : (
-              <Link
-                key={item.name}
-                href={item.href}
-                className="hover:underline"
-              >
-                {item.name}
-              </Link>
             )
           )}
         </div>
@@ -135,14 +132,12 @@ export default function Footer() {
             </a>
           ))}
         </div>
-
-
       </div>
 
       <div className="flex py-8 space-x-3">
-        <img src="/fb.svg" alt="Facebook" className="w-8 h-8" />
-        <img src="/ig.svg" alt="Instagram" className="w-8 h-8" />
-        <img src="/ln.svg" alt="LinkedIn" className="w-8 h-8" />
+        <Image src="/fb.svg" alt="Facebook" width={32} height={32} />
+        <Image src="/ig.svg" alt="Instagram" width={32} height={32} />
+        <Image src="/ln.svg" alt="LinkedIn" width={32} height={32} />
       </div>
 
       <div className="text-xs">
@@ -194,63 +189,13 @@ export default function Footer() {
             California Inc License # 02164055 provides real estate services;
             Better Cover, LLC sells insurance products; and Better Settlement
             Services provides title insurance services; and Better Inspect, LLC
-            provides home inspection services. All rights reserved.
+            provides home inspection services. Better is a registered trademark
+            of Better Home & Finance Holding Company. The Better name and
+            logo are used under license.
           </p>
           <p>
-            Home lending products offered by Better Mortgage Corporation. Better
-            Mortgage Corporation is a direct lender. NMLS #330511. 3 World Trade
-            Center, 175 Greenwich Street, 57th Floor, New York, NY 10007. Loans
-            made or arranged pursuant to a California Finance Lenders Law
-            License. Not available in all states. Equal Housing Lender. NMLS
-            Consumer Access
-          </p>
-          <p>
-            Better Real Estate, LLC dba BRE, Better Home Services, BRE Services,
-            LLC and Better Real Estate, and operating in the State of California
-            through its wholly owned subsidiary Better Real Estate California
-            Inc., is a licensed real estate brokerage and maintains its
-            corporate headquarters at 325-41 Chestnut Street, Suite 826,
-            Philadelphia, PA 19106. Here is a full listing of Better Real
-            Estate, LLC’s license numbers. Better Real Estate, LLC provides
-            access to real estate brokerage services via its nationwide network
-            of partner brokerages and real estate agents (“Better Real Estate
-            Partner Agents”). Equal Housing Opportunity. All rights reserved.
-          </p>
-          <p>New York State Fair Housing Notice</p>
-          <p>New York Standard Operating Procedures</p>
-          <p>
-            Texas Real Estate Commission: Information About Brokerage Services |
-            Consumer Protection Notice
-          </p>
-          <p>
-            Better Settlement Services, LLC. 325-41 Chestnut Street, Suite 803,
-            Philadelphia, PA 19106.
-          </p>
-          <p>
-            Homeowners insurance policies are offered through Better Cover, LLC,
-            a Pennsylvania Resident Producer Agency. License #881593. 325-41
-            Chestnut Street, Suite 807, Philadelphia, PA 19106.
-          </p>
-          <p>
-            Better Inspect, LLC maintains its corporate headquarters at 325-41
-            Chestnut Street, Suite 846, Philadelphia, PA 19106.
-          </p>
-          <p>
-            Better Mortgage Corporation, Better Real Estate, LLC, Better
-            Settlement Services, LLC, Better Cover, LLC, Better Connect, and
-            Better Inspect, LLC are separate operating subsidiaries of Better
-            Home & Finance Holding Company. Each company is a separate legal
-            entity operated and managed through its own management and
-            governance structure as required by its state of incorporation, and
-            applicable and legal and regulatory requirements. Products not
-            available in all states.
-          </p>
-          <p>
-            Any unauthorized use of any proprietary or copyrighted materials is
-            prohibited. The materials contained herein are for informational
-            purposes only and should not be construed as legal advice or a legal
-            opinion on any specific facts or circumstances. This material may
-            not be published, broadcast, rewritten, or redistributed.
+            NMLS # 330511. All loans subject to underwriting approval. Terms and
+            conditions apply.
           </p>
         </div>
       </div>

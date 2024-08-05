@@ -5,7 +5,7 @@ export default function Mission() {
                 Our mission
             </p>
             <p className="text-xl md:text-5xl text-center font-semibold">
-                We’re making homeownership simpler, faster — and most importantly, more accessible for all Americans.
+                We're making homeownership simpler, faster — and most importantly, more accessible for all Americans.
             </p>
         </div>
     );
