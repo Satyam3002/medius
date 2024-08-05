@@ -62,9 +62,9 @@ export default function Footer() {
           <p className="font-bold text-xl">Resources</p>
           {[
             { name: "Home Affordability Calculator", href: "/home-affordability-calculator" },
-            { name: "Mortgage Calculator", href: "/mortgage-calculator" },
-            { name: "Free Mortgage Calculator", href: "/free-mortgage-calculator" },
-            { name: "Mortgage Calculator with Taxes", href: "/mortgage-calculator-with-taxes" },
+            { name: "Mortgage Calculator", href: "/mortage-calculator" },
+            { name: "Free Mortgage Calculator", href: "/free-mortage-calculator" },
+            { name: "Mortgage Calculator with Taxes", href: "/mortage-calculator-with-taxes" },
             { name: "Mortgage Calculator with PMI", href: "/mortgage-calculator-with-pmi" },
             { name: "Rent vs Buy Calculator", href: "/rent-vs-buy-calculator" },
             { name: "HELOC Payment Calculator", href: "/heloc-payment-calculator" },

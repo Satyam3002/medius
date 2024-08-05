@@ -15,7 +15,7 @@ export default function Vishal() {
                 </div>
                 <div className="mt-4">
                     <button className="px-6 md:px-8 bg-customGreen1 text-white text-base py-3 md:py-4 rounded-xl hover:bg-customBlueDark">
-                        Read Vishal's story
+                        Read Vishal&apos;s story
                     </button>
                 </div>
             </div>
