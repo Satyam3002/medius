@@ -25,7 +25,7 @@ export default function Hero1() {
           Find out why
         </div>
         <div className="text-4xl md:text-6xl font-bold text-center md:text-left">
-          we're better
+          we&apos;re better
         </div>
         <button className="px-8 py-4 text-base bg-customGreen text-white rounded-full hover:bg-customBlueDark">
           See all our stories

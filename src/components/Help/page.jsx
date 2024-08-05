@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function Help() {
     return (
         <section className="flex flex-col p-6 sm:p-12 lg:p-24">
@@ -32,7 +34,7 @@ export default function Help() {
                     lenders understand how safe or risky it is for them to approve your
                     loan. A DTI ratio represents how much of your gross monthly income is
                     spoken for by creditors, and how much of it is left over to you as
-                    disposable income. It's most commonly written as a percentage. For
+                    disposable income. It&apos;s most commonly written as a percentage. For
                     example, if you pay half your monthly income in debt payments, you
                     would have a DTI of 50%.
                 </p>
@@ -53,8 +55,8 @@ export default function Help() {
                             <p>Debt-to-income Ratio</p>
                         </div>
                     </div>
-                    <p className="text-base sm:text-lg">Here's an example of what calculating your DTI might look like:</p>
-                    <img src="/dti.png" alt="DTI Example" className="w-full sm:w-3/4 md:w-1/2" />
+                    <p className="text-base sm:text-lg">Here&apos;s an example of what calculating your DTI might look like:</p>
+                    <Image src="/dti.png" alt="DTI Example" width={800} height={400} className="w-full sm:w-3/4 md:w-1/2" />
                 </div>
                 <hr className="border-t border-gray1 my-4" />
             </article>
@@ -69,7 +71,7 @@ export default function Help() {
                     property taxes, homeowners insurance, and mortgage insurance (PMI), if
                     applicable. While not typically included in your mortgage payment,
                     homeowners also pay monthly utilities and sometimes pay homeowners
-                    association (HOA) fees, so it's a good idea to factor these into your
+                    association (HOA) fees, so it&apos;s a good idea to factor these into your
                     monthly budget. This mortgage calculator factors in all these typical
                     monthly costs so you can really crunch the numbers.
                 </p>
@@ -78,11 +80,11 @@ export default function Help() {
                 </p>
                 <p className="text-gray text-base sm:text-lg">
                     The easiest way to calculate your mortgage payment is to use a
-                    calculator, but for the curious or mathematically inclined, here's the
+                    calculator, but for the curious or mathematically inclined, here&apos;s the
                     formula for calculating principal and interest yourself:
                 </p>
                 <div className="flex flex-col items-center justify-center">
-                    <img src="/mp.png" alt="Mortgage Payment Formula" className="w-full sm:w-3/4 md:w-1/2" />
+                    <Image src="/mp.png" alt="Mortgage Payment Formula" width={800} height={400} className="w-full sm:w-3/4 md:w-1/2" />
                     <div className="p-4">
                         <ul className="list-disc pl-6 space-y-4 text-base sm:text-lg">
                             <li>
@@ -114,12 +116,12 @@ export default function Help() {
                     </div>
                 </div>
                 <div className="flex flex-col items-center justify-center">
-                    <p className="text-base sm:text-lg">Here's a simple example:</p>
-                    <img src="/ssi.png" alt="Simple Example" className="w-full sm:w-3/4 md:w-1/2" />
+                    <p className="text-base sm:text-lg">Here&apos;s a simple example:</p>
+                    <Image src="/ssi.png" alt="Simple Example" width={800} height={400} className="w-full sm:w-3/4 md:w-1/2" />
                 </div>
                 <p className="text-gray text-base sm:text-lg">
                     This formula assumes a fixed-rate mortgage, where the interest rate remains constant throughout 
-                    the loan term. And remember, you'll still need to add on taxes, insurance,
+                    the loan term. And remember, you&apos;ll still need to add on taxes, insurance,
                     utilities, and HOA fees if applicable.
                 </p>
                 <hr className="border-t border-gray1 my-4" />

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import "../../app/globals.css";
 
 export default function Mortgage() {
@@ -8,12 +8,7 @@ export default function Mortgage() {
   const [loanTerm, setLoanTerm] = useState("30"); 
   const [monthlyPayment, setMonthlyPayment] = useState(null);
 
-
-  useEffect(() => {
-    calculateMonthlyPayment();
-  }, [homePrice, downPayment, interestRate, loanTerm]); 
-
-  const calculateMonthlyPayment = () => {
+  const calculateMonthlyPayment = useCallback(() => {
     const principal = parseFloat(homePrice) - parseFloat(downPayment);
     const annualInterestRate = parseFloat(interestRate) / 100;
     const monthlyInterestRate = annualInterestRate / 12;
@@ -33,7 +28,11 @@ export default function Mortgage() {
       (principal * monthlyInterestRate) /
       (1 - Math.pow(1 + monthlyInterestRate, -numberOfPayments));
     setMonthlyPayment(payment.toFixed(2));
-  };
+  }, [homePrice, downPayment, interestRate, loanTerm]);
+
+  useEffect(() => {
+    calculateMonthlyPayment();
+  }, [calculateMonthlyPayment]); 
 
   return (
     <div className="py-20 bg-customGreen2">
