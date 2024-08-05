@@ -14,7 +14,7 @@ export default function Topbar() {
         </div>
       </div>
       <div>
-        <Image src="/betty.png" alt="Betty image" layout="intrinsic" />
+       <img src="/betty.png" alt="" />
       </div>
     </div>
   );

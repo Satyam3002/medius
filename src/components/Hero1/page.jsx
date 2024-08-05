@@ -5,7 +5,8 @@ export default function Hero1() {
     <div className="flex flex-col md:flex-row items-center justify-around gap-y-8 md:gap-x-24 py-8">
       {/* Left Section: Image and Tags */}
       <div className="flex flex-col items-center md:items-start mb-8 md:mb-0">
-        <Image src="/userimg.png" alt="User" width={150} height={150} className="mb-4" />
+      <Image src="/userimg.png" alt="User" width={300} height={500} className="mb-4" />
+
         <div className="flex flex-col md:flex-row items-center md:items-start gap-y-4 md:gap-x-4">
           <div className="p-3 px-6 rounded-full border border-black hover:border-customGreen hover:border-4 transition-all">
             Arian
